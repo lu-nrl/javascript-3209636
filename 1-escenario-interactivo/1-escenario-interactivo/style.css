@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.imgfondo {
+ width: 750px;
+ height: 500px;
+ display: flex;
+}
