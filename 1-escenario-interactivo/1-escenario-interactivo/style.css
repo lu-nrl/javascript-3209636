@@ -1,11 +1,106 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.container {
+    position: relative;
+    width: 750px;
+    height: 500px;
 }
 
 
-.imgfondo {
- width: 750px;
- height: 500px;
- display: flex;
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.perso {
+    position: absolute;
+    width: 110px;
+    bottom: 110px;  
+    left: 100px;
+}
+
+.nube {
+    position: absolute;
+    width: 200px;
+    top: 60px;
+}
+
+.animada {
+    animation: moverNube 12s linear infinite;
+}
+
+@keyframes moverNube {
+    0% { left: -10px; }
+    100% { left: 560px; }
+}
+
+.item {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.corazon { 
+    width: 40px;
+    top: 40px;
+    left: 600px; }
+
+.corazon2{
+    width: 40px;
+    top: 40px;
+    left: 650px; 
+}
+
+ .corazon3 {
+    width: 40px;
+    top: 40px;
+    left: 700px; 
+}
+.lampara { 
+    width: 70px;
+    bottom: 100px;
+    left: 50px;}
+
+
+.moneda { 
+     width: 40px;
+     top: 210px; 
+     left: 355px; }
+
+
+.moneda2 {
+     width: 40px;
+     top: 120px; 
+     left: 540px;
+}
+
+
+
+.tierra {
+    position: absolute;
+}
+
+.medio {
+    width: 150px;
+    bottom: 150px;
+    left: 300px;
+}
+
+.chica {
+    width: 120px;
+    bottom: 250px;
+    left: 500px;
 }
