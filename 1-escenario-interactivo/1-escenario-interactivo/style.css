@@ -29,7 +29,7 @@ body {
 .perso {
     position: absolute;
     width: 110px;
-    bottom: 110px;  
+    bottom: 110px;
     left: 15%;
 }
 
@@ -40,12 +40,17 @@ body {
 }
 
 .animada {
-    animation: moverNube 12s linear infinite;
+    animation: moverNube 8s linear infinite alternate;
 }
 
 @keyframes moverNube {
-    0% { left: -10px; }
-    100% { left: 560px; }
+    0% {
+        left: -10px;
+    }
+
+    100% {
+        left: 560px;
+    }
 }
 
 .item {
@@ -53,41 +58,63 @@ body {
     cursor: pointer;
 }
 
-.corazon { 
+.corazon {
     width: 40px;
     top: 8%;
-    left: 80%; }
-
-.corazon2{
-    width: 40px;
-    top: 8%;
-    left: 87%; 
+    left: 80%;
 }
 
- .corazon3 {
+.corazon2 {
     width: 40px;
     top: 8%;
-    left: 94%; 
+    left: 87%;
 }
-.lampara { 
+
+.corazon3 {
+    width: 40px;
+    top: 8%;
+    left: 94%;
+}
+
+.lampara {
     width: 70px;
     bottom: 20%;
-    left: 5%;}
+    left: 5%;
+}
 
 
-.moneda { 
-     width: 40px;
-     top: 42%; 
-     left: 48%; }
+.moneda {
+    width: 40px;
+    top: 42%;
+    left: 48%;
+}
 
 
 .moneda2 {
-     width: 40px;
-     top: 25%; 
-     left: 72%;
+    width: 40px;
+    top: 25%;
+    left: 72%;
 }
 
+.saltar{
+    animation: mone 4s ease forwards;
+}  
+/* forward se ejecuta una vez */
 
+/* Animacion moneda */
+
+@keyframes mone {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateY(-60px);
+    }
+
+    100% {transform: translateY(0); opacity: 0;}
+}
 
 .tierra {
     position: absolute;
@@ -103,4 +130,23 @@ body {
     width: 120px;
     bottom: 250px;
     left: 500px;
+}
+
+/* animacion tierra */
+
+.bloque{
+    animation: moverBloque 0.4s ease infinite alternate;
+}
+@keyframes moverBloque {
+    0% {left: 40%;}
+    100% {left: 41%;}
+}
+
+.bloque2{
+    animation: moverBloque2 0.4s ease infinite alternate;
+}
+
+@keyframes moverBloque2 {
+    0% {left: 66%;}
+    100% {left: 67%;}
 }
