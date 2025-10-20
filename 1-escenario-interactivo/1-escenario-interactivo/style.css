@@ -16,6 +16,7 @@ body {
     position: relative;
     width: 750px;
     height: 500px;
+    min-width: 750px;
 }
 
 
@@ -29,13 +30,13 @@ body {
     position: absolute;
     width: 110px;
     bottom: 110px;  
-    left: 100px;
+    left: 15%;
 }
 
 .nube {
     position: absolute;
     width: 200px;
-    top: 60px;
+    top: 15%;
 }
 
 .animada {
@@ -50,41 +51,40 @@ body {
 .item {
     position: absolute;
     cursor: pointer;
-    transition: transform 0.2s;
 }
 
 .corazon { 
     width: 40px;
-    top: 40px;
-    left: 600px; }
+    top: 8%;
+    left: 80%; }
 
 .corazon2{
     width: 40px;
-    top: 40px;
-    left: 650px; 
+    top: 8%;
+    left: 87%; 
 }
 
  .corazon3 {
     width: 40px;
-    top: 40px;
-    left: 700px; 
+    top: 8%;
+    left: 94%; 
 }
 .lampara { 
     width: 70px;
-    bottom: 100px;
-    left: 50px;}
+    bottom: 20%;
+    left: 5%;}
 
 
 .moneda { 
      width: 40px;
-     top: 210px; 
-     left: 355px; }
+     top: 42%; 
+     left: 48%; }
 
 
 .moneda2 {
      width: 40px;
-     top: 120px; 
-     left: 540px;
+     top: 25%; 
+     left: 72%;
 }
 
 
