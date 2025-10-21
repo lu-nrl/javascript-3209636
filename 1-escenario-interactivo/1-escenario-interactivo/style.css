@@ -19,6 +19,13 @@ body {
     min-width: 750px;
 }
 
+.contador {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+    
+}
 
 .fondo {
     position: absolute;
@@ -97,7 +104,7 @@ body {
 }
 
 .saltar{
-    animation: mone 4s ease forwards;
+    animation: mone 1s ease forwards;
 }  
 /* forward se ejecuta una vez */
 
@@ -150,3 +157,5 @@ body {
     0% {left: 66%;}
     100% {left: 67%;}
 }
+
+
