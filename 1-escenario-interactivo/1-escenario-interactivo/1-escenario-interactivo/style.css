@@ -6,9 +6,10 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+height: 100vh;
     background-color: #000000;
 }
 
@@ -17,26 +18,35 @@ body {
     width: 750px;
     height: 500px;
     min-width: 750px;
+   overflow: hidden;
 }
 
 .contador {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3%;
-
+    position: absolute;
+    text-align: center;
+    background-color: #aa50a3b0;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 154px;
+    top: 10px;
 }
 
 .fondo {
     position: absolute;
     width: 100%;
     height: 100%;
+    
 }
 
 .perso {
     position: absolute;
     width: 110px;
-    bottom: 110px;
+    bottom: 90px;
     left: 15%;
 }
 
@@ -133,14 +143,12 @@ body {
 
 .medio {
     width: 150px;
-    bottom: 150px;
-    left: 300px;
+    bottom: 100px;
 }
 
 .chica {
     width: 120px;
-    bottom: 250px;
-    left: 500px;
+    bottom: 180px;
 }
 
 /* animacion tierra */
@@ -181,50 +189,82 @@ body {
     width: 750px;
     height: 500px;
     min-width: 750px;
+   margin-top: 53px;
+}
+
+.contador2 {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 154px;
+    top: 10px;
 }
 
 .fondo2 {
-    position: absolute;
+     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .prince {
     position: absolute;
     width: 110px;
-    bottom: 110px;
-    left: 15%;
+   bottom: 46px;
+    left: 27%;
+}
+
+.estrella {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
 }
 
 .punto1 {
-    width: 40px;
-    top: 8%;
-    left: 80%;
+    top: 19%;
+    left: 33%;
 }
 
 .punto2 {
-    width: 40px;
-    top: 8%;
-    left: 87%;
+    top: 34%;
+    left: 74%;
 }
 
 .punto3 {
-    width: 40px;
-    top: 8%;
-    left: 94%;
+    top: 64%;
+    left: 46%;
+}
+
+.planta {
+    position: absolute;
+    width: 100px;
+    bottom: 57px;
+}
+
+.platatubo{
+
+}
+
+.solita{
+
 }
 
 .bloquejito {
     position: absolute;
+    width: 700px;
 }
 
 .bloquejito1 {
-    width: 150px;
-    bottom: 150px;
-    left: 300px;
+    bottom: -13px;
+    left: -90px;
 }
 
 .bloquejito2 {
-    width: 150px;
-    bottom: 150px;
-    left: 300px;
+    bottom: -98px;
+    left: 220px;
 }
-
