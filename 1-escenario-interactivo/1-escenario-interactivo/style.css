@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,26 +18,35 @@ body {
     width: 750px;
     height: 500px;
     min-width: 750px;
+    overflow: hidden;
 }
 
 .contador {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3%;
-    
+    position: absolute;
+    text-align: center;
+    background-color: #aa50a3b0;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 154px;
+    top: 10px;
 }
 
 .fondo {
     position: absolute;
     width: 100%;
     height: 100%;
+
 }
 
 .perso {
     position: absolute;
     width: 110px;
-    bottom: 110px;
+    bottom: 90px;
     left: 15%;
 }
 
@@ -103,9 +113,10 @@ body {
     left: 72%;
 }
 
-.saltar{
+.saltar {
     animation: mone 1s ease forwards;
-}  
+}
+
 /* forward se ejecuta una vez */
 
 /* Animacion moneda */
@@ -120,7 +131,10 @@ body {
         transform: translateY(-60px);
     }
 
-    100% {transform: translateY(0); opacity: 0;}
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
 }
 
 .tierra {
@@ -129,33 +143,219 @@ body {
 
 .medio {
     width: 150px;
-    bottom: 150px;
-    left: 300px;
+    bottom: 100px;
 }
 
 .chica {
     width: 120px;
-    bottom: 250px;
-    left: 500px;
+    bottom: 180px;
 }
 
 /* animacion tierra */
 
-.bloque{
+.bloque {
     animation: moverBloque 0.4s ease infinite alternate;
 }
+
 @keyframes moverBloque {
-    0% {left: 40%;}
-    100% {left: 41%;}
+    0% {
+        left: 40%;
+    }
+
+    100% {
+        left: 41%;
+    }
 }
 
-.bloque2{
+.bloque2 {
     animation: moverBloque2 0.4s ease infinite alternate;
 }
 
 @keyframes moverBloque2 {
-    0% {left: 66%;}
-    100% {left: 67%;}
+    0% {
+        left: 66%;
+    }
+
+    100% {
+        left: 67%;
+    }
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
+
+.juego2 {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    min-width: 750px;
+    margin-top: 53px;
+}
+
+.contador2 {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 154px;
+    top: 10px;
+}
+
+.fondo2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.prince {
+    position: absolute;
+    width: 110px;
+    bottom: 46px;
+    left: 27%;
+}
+
+.estrella {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.punto1 {
+    top: 19%;
+    left: 33%;
+}
+
+.punto2 {
+    top: 34%;
+    left: 74%;
+}
+
+.punto3 {
+    top: 64%;
+    left: 46%;
+}
+
+.planta {
+    position: absolute;
+    width: 100px;
+    bottom: 57px;
+}
+
+.platatubo {
+    bottom: 65px;
+    left: 5%;
+}
+
+.solita {
+    bottom: 65px;
+    left: 86%;
+}
+
+.bloquejito {
+    position: absolute;
+    width: 700px;
+}
+
+.bloquejito1 {
+    bottom: -13px;
+    left: -90px;
+}
+
+.bloquejito2 {
+    bottom: -98px;
+    left: 220px;
+}
+
+.juego3 {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    min-width: 750px;
+    margin-top: 53px;
+}
+
+.fondo3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contador3 {
+    position: absolute;
+    text-align: center;
+    background-color: #2b38adbb;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 154px;
+    top: 10px;
+}
+
+.conejo {
+    position: absolute;
+    width: 110px;
+       bottom: 107px;
+    left: 87%;
+}
+
+.caja {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+}
+
+.n1 {
+    top: 19%;
+    left: 33%;
+}
+
+.n2 {
+    top: 34%;
+    left: 74%;
+}
+
+.n3 {
+    top: 64%;
+    left: 46%;
+}
+
+.grande {
+    position: absolute;
+    width: 227px;
+}
+
+.bloquetierra {
+    bottom: 258px;
+    left: 156px;
+}
+
+.bloquetierra2 {
+    bottom: 170px;
+    left: 466px;
+}
+
+.tronco {
+    position: absolute;
+    width: 110px;
+        bottom: 113px;
+    left: 4%;
+}
