@@ -9,7 +9,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #000000;
 }
 
@@ -30,7 +29,7 @@ body {
     z-index: 1;
     padding: 20px;
     margin: auto;
-    left: 0;
+    left: -149px;
     right: 0;
     width: 154px;
     top: 10px;
@@ -38,21 +37,23 @@ body {
 
 .fondo {
     position: absolute;
-    width: 100%;
-    height: 100%;
 
 }
 
 .perso {
     position: absolute;
     width: 110px;
-    bottom: 90px;
+    bottom: 44%;
     left: 15%;
+}
+
+.perso:hover {
+    transform: scale(1.1);
 }
 
 .nube {
     position: absolute;
-    width: 200px;
+    width: 158px;
     top: 15%;
 }
 
@@ -66,7 +67,7 @@ body {
     }
 
     100% {
-        left: 560px;
+        left: 430px;
     }
 }
 
@@ -75,42 +76,48 @@ body {
     cursor: pointer;
 }
 
+.item:hover {
+    transform: scale(1.1);
+}
 .corazon {
     width: 40px;
     top: 8%;
-    left: 80%;
+    left: 59%;
 }
 
 .corazon2 {
     width: 40px;
     top: 8%;
-    left: 87%;
+    left: 65%;
 }
 
 .corazon3 {
     width: 40px;
     top: 8%;
-    left: 94%;
+    left: 71%;
 }
 
 .lampara {
     width: 70px;
-    bottom: 20%;
+    bottom: 42%;
     left: 5%;
 }
 
+.lampara:hover {
+    transform: scale(1.1);
+}
 
 .moneda {
     width: 40px;
-    top: 42%;
-    left: 48%;
+    top: 28%;
+    left: 45%;
 }
 
 
 .moneda2 {
     width: 40px;
     top: 25%;
-    left: 72%;
+    left: 66%;
 }
 
 .saltar {
@@ -142,13 +149,13 @@ body {
 }
 
 .medio {
-    width: 150px;
-    bottom: 100px;
+    width: 102px;
+    bottom: 255px;
 }
 
 .chica {
     width: 120px;
-    bottom: 180px;
+    top: 32%;
 }
 
 /* animacion tierra */
@@ -173,11 +180,11 @@ body {
 
 @keyframes moverBloque2 {
     0% {
-        left: 66%;
+        left: 60%;
     }
 
     100% {
-        left: 67%;
+        left: 61%;
     }
 }
 
@@ -189,7 +196,7 @@ body {
     width: 750px;
     height: 500px;
     min-width: 750px;
-    margin-top: 53px;
+
 }
 
 .contador2 {
@@ -200,7 +207,7 @@ body {
     z-index: 1;
     padding: 20px;
     margin: auto;
-    left: 0;
+    left: -108px;
     right: 0;
     width: 154px;
     top: 10px;
@@ -208,21 +215,26 @@ body {
 
 .fondo2 {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    z-index: 0;
 }
 
 .prince {
     position: absolute;
-    width: 110px;
-    bottom: 46px;
-    left: 27%;
+    width: 96px;
+    bottom: 305px;
+    left: 53%;
+    z-index: 2;
+}
+
+.prince:hover {
+    transform: scale(1.1);
 }
 
 .estrella {
     position: absolute;
     width: 50px;
     cursor: pointer;
+    z-index: 2;
     animation: girar 3s linear infinite;
 }
 
@@ -236,20 +248,36 @@ body {
     }
 }
 
+.saltar {
+    animation: desaparecer 1s ease forwards;
+}
+
+@keyframes desaparecer {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
 .punto1 {
-    top: 19%;
-    left: 33%;
+    top: 33%;
+    left: 10%
 }
 
 .punto2 {
-    top: 34%;
-    left: 74%;
+    top: 25%;
+    left: 35%;
 }
 
-.punto3 {
-    top: 64%;
-    left: 46%;
-}
 
 .planta {
     position: absolute;
@@ -258,14 +286,29 @@ body {
 }
 
 .platatubo {
-    bottom: 65px;
-    left: 5%;
+    width: 69px;
+    bottom: 174px;
+    left: 33%;
+    animation: subirBajar 0.5s ease-in-out infinite alternate;
 }
 
 .solita {
-    bottom: 65px;
-    left: 86%;
+    width: 70px;
+    bottom: 174px;
+    left: 64%;
+    animation: subirBajar 0.5s ease-in-out infinite alternate;
 }
+
+@keyframes subirBajar {
+    0% {
+        bottom: 174px;
+    }
+
+    100% {
+        bottom: 180px;
+    }
+}
+
 
 .bloquejito {
     position: absolute;
@@ -274,13 +317,14 @@ body {
 
 .bloquejito1 {
     bottom: -13px;
-    left: -90px;
+    right: 311px;
 }
 
 .bloquejito2 {
-    bottom: -98px;
-    left: 220px;
+    left: 86px;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .juego3 {
     position: relative;
@@ -292,8 +336,6 @@ body {
 
 .fondo3 {
     position: absolute;
-    width: 100%;
-    height: 100%;
 }
 
 .contador3 {
@@ -304,17 +346,33 @@ body {
     z-index: 1;
     padding: 20px;
     margin: auto;
-    left: 0;
+    left: -108px;
     right: 0;
     width: 154px;
     top: 10px;
 }
 
+
 .conejo {
     position: absolute;
-    width: 110px;
-       bottom: 107px;
-    left: 87%;
+    width: 90px;
+    bottom: 170px;
+    left: 72%;
+    animation: saltarConejo 2s ease-in-out infinite alternate;
+}
+
+@keyframes saltarConejo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .caja {
@@ -329,13 +387,13 @@ body {
 }
 
 .n2 {
-    top: 34%;
-    left: 74%;
+    top: 28%;
+    left: 61%;
 }
 
 .n3 {
-    top: 64%;
-    left: 46%;
+    top: 49%;
+    left: 40%
 }
 
 .grande {
@@ -344,18 +402,37 @@ body {
 }
 
 .bloquetierra {
-    bottom: 258px;
+    bottom: 280px;
     left: 156px;
 }
 
 .bloquetierra2 {
-    bottom: 170px;
-    left: 466px;
+    bottom: 235px;
+    left: 356px;
 }
 
-.tronco {
+ .tronco {
     position: absolute;
-    width: 110px;
-        bottom: 113px;
-    left: 4%;
+    width: 93px;
+    bottom: 179px;
+    cursor: pointer;;
+    left: 16%;
 }
+
+.arbolito {
+    position: absolute;
+    width: 170px;
+    bottom: 181px;
+    left: -1%;
+    cursor: pointer;
+} 
+
+.arbolito:hover{
+transform: scale(1.1);
+}
+
+.tronco:hover {
+    transform: scale(1.1);
+}
+
+
