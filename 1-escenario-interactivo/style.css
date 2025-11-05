@@ -81,7 +81,21 @@ body {
 .perso:hover {
     transform: scale(1.1);
 }
+.salto {
+    animation: salto-arriba 0.5s ease-out forwards; /* The forwards keeps it at the end state of the animation */
+}
 
+@keyframes salto-arriba {
+    0% {
+        transform: translateY(0); /* Start at current position */
+    }
+    50% {
+        transform: translateY(-80px); /* Move up 80px */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
 .nube {
     position: absolute;
     width: 201px;
@@ -338,9 +352,12 @@ body {
 .punto2 {
     top: 43%;
     left: 31%;
-
 }
 
+.punto3 {
+    top: 50%;
+    left: 65%;
+}
 
 .planta {
     position: absolute;
