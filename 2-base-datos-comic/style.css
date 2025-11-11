@@ -244,3 +244,143 @@ body {
     padding: 40px;
     text-align: center;
 }
+
+@media (min-width: 320px) {
+
+    .titulo-principal {
+        font-size: 56px;
+    }
+
+    .princi-descripcion {
+        font-size: 20px;
+        max-width: 70%;
+        margin: 0 auto 30px;
+    }
+
+    /* MARCA */
+    .marca-lista {
+        gap: 30px;
+    }
+
+    .marca-item {
+        width: 180px;
+        padding: 25px;
+    }
+
+    /* COMIC */
+    .comic-imagen {
+        width: 480px;
+    }
+
+    /* PERSONAJES */
+    .personajes-lista {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .personaje-item {
+        width: 150px;
+        padding: 20px;
+    }
+
+    /* CAPITULOS */
+    .capitulos-lista {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .capitulo-item {
+        width: 180px;
+        padding: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 0 5%;
+    }
+
+    /* PRINCIPAL */
+    .principal {
+        padding: 120px 20px;
+    }
+
+    .titulo-principal {
+        font-size: 64px;
+    }
+
+    .princi-descripcion {
+        font-size: 22px;
+        max-width: 55%;
+    }
+
+    /* MARCA */
+    .marca-lista {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .marca-item {
+        width: 220px;
+        padding: 30px;
+    }
+
+    /* COMIC */
+    .comic-contenido {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .comic-imagen {
+        width: 400px;
+    }
+
+    .comic-subtitulo {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .tienda-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .tienda-info,
+    .video,
+    .narrativa {
+        height: 100%;
+    }
+
+    /* PERSONAJES → 3 columnas */
+    .personajes-lista {
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .personaje-item {
+        width: 180px;
+        padding: 25px;
+    }
+
+    /* CAPITULOS → 3 columnas */
+    .capitulos-lista {
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .capitulo-item {
+        width: 220px;
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 60px 20px;
+        font-size: 18px;
+    }
+}
+
