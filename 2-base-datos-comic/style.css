@@ -275,7 +275,7 @@ body {
     /* PERSONAJES */
     .personajes-lista {
         justify-content: center;
-        flex-wrap: wrap;
+       
     }
 
     .personaje-item {
@@ -286,7 +286,7 @@ body {
     /* CAPITULOS */
     .capitulos-lista {
         justify-content: center;
-        flex-wrap: wrap;
+        
     }
 
     .capitulo-item {
@@ -295,7 +295,141 @@ body {
     }
 }
 
+/* tablet */
 @media (min-width: 768px) {
+
+    body {
+        padding: 0 5%;
+    }
+
+    /* PRINCIPAL */
+    .principal {
+        padding: 120px 20px;
+    }
+
+    .titulo-principal {
+        font-size: 64px;
+    }
+
+    .princi-descripcion {
+        font-size: 22px;
+        max-width: 55%;
+    }
+
+    /* MARCA */
+    .marca-lista {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .marca-item {
+        width: 220px;
+        padding: 30px;
+    }
+
+    /* COMIC */
+    .comic-contenido {
+        gap: 40px;
+    }
+
+    .comic-imagen {
+        width: 400px;
+    }
+
+    .comic-subtitulo {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .tienda-info,
+    .video,
+    .narrativa {
+        height: 100%;
+    }
+
+    /* PERSONAJES  */
+    .personajes-lista {
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .personaje-item {
+        width: 180px;
+        padding: 25px;
+    }
+
+    /* CAPITULOS */
+    .capitulos-lista {
+        justify-content: center;
+        gap: 30px;
+        
+    }
+
+    .capitulo-item {
+        width: 220px;
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 60px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .titulo-principal {
+        font-size: 56px;
+    }
+
+    .princi-descripcion {
+        font-size: 20px;
+        max-width: 70%;
+        margin: 0 auto 30px;
+    }
+
+    /* MARCA */
+    .marca-lista {
+        gap: 30px;
+    }
+
+    .marca-item {
+        width: 180px;
+        padding: 25px;
+    }
+
+    /* COMIC */
+    .comic-imagen {
+        width: 480px;
+    }
+
+    /* PERSONAJES */
+    .personajes-lista {
+        justify-content: center;
+
+    }
+
+    .personaje-item {
+        width: 150px;
+        padding: 20px;
+    }
+
+    /* CAPITULOS */
+    .capitulos-lista {
+        justify-content: center;
+        
+    }
+
+    .capitulo-item {
+        width: 180px;
+        padding: 22px;
+    }
+}
+
+/*mediano */
+@media (min-width: 900px) {
 
     body {
         padding: 0 5%;
@@ -341,11 +475,6 @@ body {
         margin-top: 40px;
     }
 
-    .tienda-contenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
 
     .tienda-info,
     .video,
@@ -353,11 +482,11 @@ body {
         height: 100%;
     }
 
-    /* PERSONAJES → 3 columnas */
+    /* PERSONAJES */
     .personajes-lista {
         justify-content: center;
         gap: 30px;
-        flex-wrap: wrap;
+        
     }
 
     .personaje-item {
@@ -365,11 +494,11 @@ body {
         padding: 25px;
     }
 
-    /* CAPITULOS → 3 columnas */
+    /* CAPITULOS */
     .capitulos-lista {
         justify-content: center;
         gap: 30px;
-        flex-wrap: wrap;
+        
     }
 
     .capitulo-item {
@@ -384,3 +513,47 @@ body {
     }
 }
 
+/*  GRANDE  */
+@media (min-width: 1200px) {
+
+    body {
+        padding: 0 10%;
+    }
+
+    /* PRINCIPAL */
+    .titulo-principal {
+        font-size: 72px;
+    }
+
+    .princi-descripcion {
+        font-size: 24px;
+        max-width: 50%;
+    }
+
+    /* COMIC */
+    .comic-imagen {
+        width: 480px;
+    }
+
+   
+
+    /* PERSONAJES */
+    .personajes-lista {
+        gap: 40px;
+    }
+
+    .personaje-item {
+        width: 200px;
+        padding: 28px;
+    }
+
+    /* CAPITULOS */
+    .capitulos-lista {
+        gap: 40px;
+    }
+
+    .capitulo-item {
+        width: 250px;
+        padding: 35px;
+    }
+}
