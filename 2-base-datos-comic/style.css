@@ -52,7 +52,7 @@ body {
     padding: 60px 20px;
 }
 
-.titulo.marca {
+.titulo-marca {
     font-size: 36px;
     font-weight: bold;
 }
@@ -125,30 +125,6 @@ body {
 }
 
 
-/* TIENDA  */
-
-.tienda {
-    width: 100%;
-    padding: 60px 20px;
-}
-
-.titulo-tienda {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.tienda-contenedor {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.tienda-info {
-    background-color: #1b1b1b;
-    padding: 25px;
-    border-radius: 12px;
-}
 
 
 /*  VIDEO   */
@@ -211,6 +187,23 @@ body {
     text-align: center;
 }
 
+.leon{
+    background-image: url(img/caballero.jpg);
+}
+
+.elvi{
+    background-image: url(Img/elvira.jpg);
+}
+
+.nino{
+    background-image: url(Img/ninove.jpg);
+}
+.rey{
+    background-image: url(Img/rey.jpeg);
+}
+.reina{
+    background-image: url(Img/reina.jpeg);
+}
 
 
  /* CAPÍTULOS */
@@ -340,9 +333,13 @@ body {
         font-size: 22px;
         margin-top: 40px;
     }
+.video{
+    background-image: url(Img/trailer.png);
 
+    
+}
     .tienda-info,
-    .video,
+    
     .narrativa {
         height: 100%;
     }
