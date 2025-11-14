@@ -1,6 +1,6 @@
 let comic = {
     "nombreComic": "Cenizas De Honor",
-    "sipnosis": "Un caballero siguiendo su destino",
+    "sinopsis": "Un caballero siguiendo su destino",
     "year": 2025,
     "autores": ["Luna", "Sofia", "Alexis", "Miguel"],
     "personajes": ["Sr. Leon", "Elvira", "Ninove", "Brujas del alba", "Rey", "Reina", "Consejero", "Caballeros", "Cristobal Colón"],
