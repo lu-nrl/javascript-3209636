@@ -13,9 +13,7 @@ body {
     align-items: center;
 }
 
-
-/*  PRINCIPAL  */
-
+/* PRINCIPAL */
 .principal {
     text-align: center;
     padding: 80px 20px;
@@ -43,10 +41,7 @@ body {
     font-size: 16px;
 }
 
-
-
-/*  MARCA   */
-
+/* MARCA */
 .marca {
     width: 100%;
     padding: 60px 20px;
@@ -76,7 +71,7 @@ body {
     border: 1px solid #333;
 }
 
-.btn-anterior{
+.btn-anterior {
     margin: 20px 10px;
     padding: 12px 25px;
     color: white;
@@ -85,6 +80,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
+
 .btn-siguiente {
     margin: 20px 10px;
     padding: 12px 25px;
@@ -95,9 +91,7 @@ body {
     cursor: pointer;
 }
 
-
-/* COMIC */ 
-
+/* COMIC */
 .comic {
     width: 100%;
     padding: 60px 20px;
@@ -124,10 +118,7 @@ body {
     margin-bottom: 10px;
 }
 
-
-
-
-/*  VIDEO   */
+/* VIDEO */
 .video {
     background-color: #1b1b1b;
     padding: 25px;
@@ -144,9 +135,7 @@ body {
     cursor: pointer;
 }
 
-/* 
- NARRATIVA  */
-
+/* NARRATIVA */
 .narrativa {
     background-color: #1b1b1b;
     padding: 25px;
@@ -161,9 +150,7 @@ body {
     text-align: center;
 }
 
-
-
-/*  PERSONAJES */
+/* PERSONAJES */
 .personajes {
     padding: 20px;
 }
@@ -181,33 +168,79 @@ body {
 
 .personaje-item {
     background-color: #1b1b1b;
-    width: 120px;
-    padding: 15px;
+    width: 180px;
+    height: 220px;
     border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 10px;
+}
+
+.leon {
+    background-image: url("./Img/caballero.jpg");
+}
+
+.elvi {
+    background-image: url("./Img/elvira.jpg");
+}
+
+.nino {
+    background-image: url("./Img/ninove.jpg");
+}
+
+.rey {
+    background-image: url("./Img/rey.jpeg");
+}
+
+.reina {
+    background-image: url("./Img/reina.jpeg");
+}
+
+/* ESCENAS */
+.escenas {
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo-escenas {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.escenas-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.escena-item {
+    width: 180px;
+    height: 220px;
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    overflow: hidden;
     text-align: center;
 }
 
-.leon{
-    background-image: url(img/caballero.jpg);
+.escena-imagen {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
 }
 
-.elvi{
-    background-image: url(Img/elvira.jpg);
+.escena-nombre {
+    padding: 10px;
+    font-size: 16px;
 }
 
-.nino{
-    background-image: url(Img/ninove.jpg);
-}
-.rey{
-    background-image: url(Img/rey.jpeg);
-}
-.reina{
-    background-image: url(Img/reina.jpeg);
-}
-
-
- /* CAPÍTULOS */
-
+/* CAPÍTULOS */
 .capitulos {
     background-color: #111;
     padding: 30px;
@@ -228,10 +261,7 @@ body {
     text-align: center;
 }
 
-
-
-
-/*  FOOTER  */ 
+/* FOOTER */
 .footer {
     margin-top: 60px;
     padding: 40px;
@@ -239,7 +269,6 @@ body {
 }
 
 @media (min-width: 320px) {
-
     .titulo-principal {
         font-size: 56px;
     }
@@ -262,13 +291,15 @@ body {
 
     /* COMIC */
     .comic-imagen {
-        width: 480px;
+        width: 350px;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
     }
 
     /* PERSONAJES */
     .personajes-lista {
         justify-content: center;
-       
     }
 
     .personaje-item {
@@ -279,7 +310,6 @@ body {
     /* CAPITULOS */
     .capitulos-lista {
         justify-content: center;
-        
     }
 
     .capitulo-item {
@@ -290,7 +320,6 @@ body {
 
 /* tablet */
 @media (min-width: 768px) {
-
     body {
         padding: 0 5%;
     }
@@ -333,22 +362,24 @@ body {
         font-size: 22px;
         margin-top: 40px;
     }
-.video{
-    background-image: url(Img/trailer.png);
 
-    
-}
+    .video {
+        background-image: url(Img/trailer.png);
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+        border-radius: 12px;
+    }
+
     .tienda-info,
-    
     .narrativa {
         height: 100%;
     }
 
-    /* PERSONAJES  */
+    /* PERSONAJES */
     .personajes-lista {
         justify-content: center;
         gap: 30px;
-
     }
 
     .personaje-item {
@@ -360,7 +391,6 @@ body {
     .capitulos-lista {
         justify-content: center;
         gap: 30px;
-        
     }
 
     .capitulo-item {
@@ -376,7 +406,6 @@ body {
 }
 
 @media (min-width: 600px) {
-
     .titulo-principal {
         font-size: 56px;
     }
@@ -405,7 +434,6 @@ body {
     /* PERSONAJES */
     .personajes-lista {
         justify-content: center;
-
     }
 
     .personaje-item {
@@ -416,7 +444,6 @@ body {
     /* CAPITULOS */
     .capitulos-lista {
         justify-content: center;
-        
     }
 
     .capitulo-item {
@@ -427,7 +454,6 @@ body {
 
 /*mediano */
 @media (min-width: 900px) {
-
     body {
         padding: 0 5%;
     }
@@ -472,7 +498,6 @@ body {
         margin-top: 40px;
     }
 
-
     .tienda-info,
     .video,
     .narrativa {
@@ -483,7 +508,6 @@ body {
     .personajes-lista {
         justify-content: center;
         gap: 30px;
-        
     }
 
     .personaje-item {
@@ -495,7 +519,6 @@ body {
     .capitulos-lista {
         justify-content: center;
         gap: 30px;
-        
     }
 
     .capitulo-item {
@@ -510,9 +533,8 @@ body {
     }
 }
 
-/*  GRANDE  */
+/* GRANDE */
 @media (min-width: 1200px) {
-
     body {
         padding: 0 10%;
     }
@@ -531,8 +553,6 @@ body {
     .comic-imagen {
         width: 480px;
     }
-
-   
 
     /* PERSONAJES */
     .personajes-lista {
