@@ -3,21 +3,47 @@ let comic = {
     "sinopsis": "Un caballero siguiendo su destino",
     "year": 2025,
     "autores": ["Luna", "Sofia", "Alexis", "Miguel"],
-    "personajes": ["Sr. Leon", "Elvira", "Ninove", "Brujas del alba", "Rey", "Reina", "Consejero", "Caballeros", "Cristobal Colón"],
+
+    "personajes":[
+        {
+          "nombre": "Sr.León",
+          "imagen": "./Img/caballero.png",
+        },
+        {
+        "nombre": "Elvira",
+        "imagen": "./Img/",
+        },
+    ],
+
+    "episodios": [
+        {
+          "nombre1": "Epi: Guerra mil años",
+          "imagen1": "./Img/castillo-rey.jpg",
+        },
+        {
+          "nombre2": "Elvira",
+          "imagen2": "./Img/hechiceras.jpg",
+        }
+    ],
+
+
+
+
+
     "genero": ["Historia", "Fantasia", "Ciencia Ficción", "Acción"],
-    "portada": "./imagenes/portada.jpg",
+    "portada": "./Img/Imagen1.png",
     "escenas": [
         {
             "id": 1,
             "nombre": "",
             "personajes": ["elvi", "reina"],
-            "image": "./Img/portada.png",
+            "image": "./Img/batalla bosque.jpg",
         },
         {
              "id": 2,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./Img/portada.png",
+            "image": "./Img/castillo rey.jpg",
         },
         {
             "id": 3,
