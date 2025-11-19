@@ -7,26 +7,59 @@ let comic = {
     "personajes":[
         {
           "nombre": "Sr.León",
-          "imagen": "./Img/caballero.png",
+          "imagen": "./Img/Sr.León.jpg",
         },
         {
         "nombre": "Elvira",
+        "imagen": "./Img/Elvira.jpg",
+        },
+        {
+        "nombre": "Rey",
+        "imagen": "./Img/Rey.jpg",
+        },{
+        "nombre": "Reina",
+        "imagen": "./Img/",
+        },{
+        "nombre": "Sirvienta",
+        "imagen": "./Img/",
+        },{
+        "nombre": "Brujas del alba",
+        "imagen": "./Img/",
+        },{
+        "nombre": "Pueblo",
+        "imagen": "./Img/",
+        },{
+        "nombre": "Cristobal Colón",
+        "imagen": "./Img/",
+        },
+        {
+        "nombre": "Caballeros",
         "imagen": "./Img/",
         },
     ],
 
-    "episodios": [
+    "capitulos": [
         {
-          "nombre1": "Epi: Guerra mil años",
-          "imagen1": "./Img/castillo-rey.jpg",
+          "nombre1": "CAP 1: PRIMERAS CIVILIZACIONES Y LA INVENCION DE LA ESCRITURA",
+          "imagen1": "./Img/primeras\ civilizaciones.jpg",
         },
         {
-          "nombre2": "Elvira",
-          "imagen2": "./Img/hechiceras.jpg",
-        }
+          "nombre2": "CAP 2: LA ANTIGUA GRECIA Y ROMA",
+          "imagen2": "./Img/antigua\ grecia\ y\ roma.jpg",
+        },
+        {
+          "nombre2": "CAP 3: LA EDAD MEDIA Y LA GESTION DEL CONOCIMIENTO Y LA INNOVACION",
+          "imagen2": "./Img/Edad\ media\ gestion\ de\ conocimieto.jpg",
+        },
+        {
+          "nombre2": "CAP 4: REVOLUCION INDUSTRIAL",
+          "imagen2": "./Img/revolucion\ industrial.jpg",
+        },
+        {
+          "nombre2": "CAP 5: ERA DIGITAL",
+          "imagen2": "./Img/era\ digital.jpg",
+        },
     ],
-
-
 
 
 

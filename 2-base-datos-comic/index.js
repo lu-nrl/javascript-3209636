@@ -1,5 +1,5 @@
-const listaEscenas = document.querySelector (".escenas")
-
+const listaEscenas = document.querySelector (".escenas-lista")
+const personajes= document.querySelector (".personajes-lista")
 const Comic= document.querySelector(".info-comic").innerHTML = `
     <b>Año:</b> ${comic.year}<br>
     <b>Título:</b> ${comic.nombreComic}<br>
@@ -7,10 +7,39 @@ const Comic= document.querySelector(".info-comic").innerHTML = `
     <b>Géneros:</b> ${comic.genero.join(", ")}<br>
     <b>Autores:</b> ${comic.autores.join(", ")}
 `;
+const infoComic= document.querySelector (".personajes-lista")
 
-/* console.log(comic.escenas) */
+personajes.innerHTML = `
+<div class="personajes-item">
+         <img class="personajes-imagen" src="${comic.personajes.imagen}">
+                <p class="personajes-nombre">Sr.León</p>
+            </div>
+`
+comic.personajes.forEach(personajes => {
+    const miCard= document.createElement("div")
+    miCard.classList.add("tarjeta-cap")
+    console.log(personajes.nombre)
+    innerHTML= `
+    <img src= "${personajes.imagen}">
+    <p> ${personajes.nombre}`
 
-comic.escenas.forEach(escenas => {
+    infoComic.appendchild(miCard)
+    console.log(personajes.nombre)
+});
+
+
+
+/* 
+///////////////////////////////////////////////////////////////////////////////// */
+
+listaEscenas.innerHTML = `
+<div class="personajes-item">
+         <img class="personajes-imagen" src="${comic.escenas.imagen}">
+                <p class="personajes-nombre">Sr.León</p>
+            </div>
+
+`
+    comic.escenas.forEach(escenas => {
     const miCard= document.createElement("div")
     miCard.classList.add("tarjeta-cap")
     console.log(escenas.nombre)
@@ -18,6 +47,6 @@ comic.escenas.forEach(escenas => {
     <img src= "${escenas.imagen}" />
     <p> ${escenas.nombre}`
 
-    infoComic.appendchild(miCard)
+    .appendchild(miCard)
     console.log(escenas.nombre)
 });
