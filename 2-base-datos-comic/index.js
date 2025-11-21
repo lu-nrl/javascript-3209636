@@ -1,5 +1,7 @@
 const listaEscenas = document.querySelector (".escenas-lista")
-const personajes= document.querySelector (".personajes-lista")
+const personajesContainer= document.querySelector (".personajes-lista")
+const infoComic= document.querySelector (".personajes-lista")
+const capitulos= document.querySelector (".")
 const Comic= document.querySelector(".info-comic").innerHTML = `
     <b>Año:</b> ${comic.year}<br>
     <b>Título:</b> ${comic.nombreComic}<br>
@@ -7,46 +9,47 @@ const Comic= document.querySelector(".info-comic").innerHTML = `
     <b>Géneros:</b> ${comic.genero.join(", ")}<br>
     <b>Autores:</b> ${comic.autores.join(", ")}
 `;
-const infoComic= document.querySelector (".personajes-lista")
 
-personajes.innerHTML = `
-<div class="personajes-item">
-         <img class="personajes-imagen" src="${comic.personajes.imagen}">
-                <p class="personajes-nombre">Sr.León</p>
-            </div>
-`
-comic.personajes.forEach(personajes => {
+comic.personajes.forEach(personaje => {
     const miCard= document.createElement("div")
-    miCard.classList.add("tarjeta-cap")
-    console.log(personajes.nombre)
-    innerHTML= `
-    <img src= "${personajes.imagen}">
-    <p> ${personajes.nombre}`
+    miCard.classList.add("personajes-item")
+    console.log(personaje.nombre)
+    miCard.innerHTML= `
+     <img class="personajes-imagen" src="${personaje.imagen}">
+                <p class="personajes-nombre">${personaje.nombre}</p>
+                `
 
-    infoComic.appendchild(miCard)
-    console.log(personajes.nombre)
+  personajesContainer.appendChild(miCard)
+    console.log(personaje.nombre)
 });
 
+/* ///////////////////////////////////////////////////////////////////////////////// */
 
 
-/* 
-///////////////////////////////////////////////////////////////////////////////// */
+    comic.escenas.forEach( escena => {
+    const miCard= document.createElement("div");
+    miCard.classList.add("escenas-lista");
+    console.log(escena.nombre);
+    miCard.innerHTML= `
+    <div class="escena-item">
+                <img class="escena-imagen" src="${escena.image}">
+                <p class="escena-nombre">${escena.nombre}</p>
+            </div>`
+    listaEscenas.appendChild(miCard);
+    console.log(escena.nombre)
+});
 
-listaEscenas.innerHTML = `
-<div class="personajes-item">
-         <img class="personajes-imagen" src="${comic.escenas.imagen}">
-                <p class="personajes-nombre">Sr.León</p>
-            </div>
+/* ///////////////////////////////////////////////////////////////////////////////// */
 
-`
-    comic.escenas.forEach(escenas => {
-    const miCard= document.createElement("div")
-    miCard.classList.add("tarjeta-cap")
-    console.log(escenas.nombre)
-    innerHTML= `
-    <img src= "${escenas.imagen}" />
-    <p> ${escenas.nombre}`
-
-    .appendchild(miCard)
-    console.log(escenas.nombre)
+  comic.escenas.forEach( escena => {
+    const miCard= document.createElement("div");
+    miCard.classList.add("escenas-lista");
+    console.log(escena.nombre);
+    miCard.innerHTML= `
+    <div class="escena-item">
+                <img class="escena-imagen" src="${escena.image}">
+                <p class="escena-nombre">${escena.nombre}</p>
+            </div>`
+    listaEscenas.appendChild(miCard);
+    console.log(escena.nombre)
 });

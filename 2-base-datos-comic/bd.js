@@ -18,23 +18,31 @@ let comic = {
         "imagen": "./Img/Rey.jpg",
         },{
         "nombre": "Reina",
-        "imagen": "./Img/",
+        "imagen": "./Img/Reina.jpg",
         },{
         "nombre": "Sirvienta",
-        "imagen": "./Img/",
+        "imagen": "./Img/Sirvienta.jpg",
         },{
         "nombre": "Brujas del alba",
-        "imagen": "./Img/",
+        "imagen": "./Img/brujas.jpg",
         },{
         "nombre": "Pueblo",
-        "imagen": "./Img/",
+        "imagen": "./Img/Gente.jpg",
         },{
         "nombre": "Cristobal Colón",
-        "imagen": "./Img/",
+        "imagen": "./Img/Cristobal.jpg",
         },
         {
         "nombre": "Caballeros",
-        "imagen": "./Img/",
+        "imagen": "./Img/Caballeros.jpg",
+        },
+        {
+        "nombre": "Ninove",
+        "imagen": "./Img/Ninove.jpg",
+        },
+        {
+        "nombre": "Consejero",
+        "imagen": "./Img/Consejero.jpg",
         },
     ],
 
@@ -68,7 +76,7 @@ let comic = {
     "escenas": [
         {
             "id": 1,
-            "nombre": "",
+            "nombre": "ghdfhawgeheage",
             "personajes": ["elvi", "reina"],
             "image": "./Img/batalla bosque.jpg",
         },
@@ -76,103 +84,103 @@ let comic = {
              "id": 2,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./Img/castillo rey.jpg",
+            "image": "./Img/castillo-rey.jpg",
         },
         {
             "id": 3,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 4,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 5,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 6,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 7,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 8,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 9,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 10,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 11,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/portada.png",
+            "image": "./img/.png",
         },
         {
             "id": 12,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./img/trailer.png",
+            "image": "./img/.png",
         },
         {
             "id": 13,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         },
         {
             "id": 14,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         },
         {
             "id": 15,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         },
         {
             "id": 16,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         },
         {
             "id": 17,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         },
         {
             "id": 18,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/portada.png",
+            "image": "./images/.png",
         }
     ]
 }
