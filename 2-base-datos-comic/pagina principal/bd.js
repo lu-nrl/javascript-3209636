@@ -5,42 +5,48 @@ let comic = {
     "autores": ["Luna", "Sofia", "Alexis", "Miguel"],
 
     "personajes":[
-        {
+        { "id": 1,
           "nombre": "Sr.León",
           "imagen": "./Img/Sr.León.jpg",
         },
         {
+        "id": 2,
         "nombre": "Elvira",
         "imagen": "./Img/Elvira.jpg",
         },
-        {
+        {"id": 3,
         "nombre": "Rey",
         "imagen": "./Img/Rey.jpg",
-        },{
+        },
+        {"id": 4,
         "nombre": "Reina",
         "imagen": "./Img/Reina.jpg",
-        },{
+        },
+        {"id": 5,
         "nombre": "Sirvienta",
         "imagen": "./Img/Sirvienta.jpg",
-        },{
+        },
+        {"id": 6,
         "nombre": "Brujas del alba",
         "imagen": "./Img/brujas.jpg",
-        },{
+        },
+        {"id": 7,
         "nombre": "Pueblo",
         "imagen": "./Img/Gente.jpg",
-        },{
+        },
+        {"id": 8,
         "nombre": "Cristobal Colón",
         "imagen": "./Img/Cristobal.jpg",
         },
-        {
+        {"id": 9,
         "nombre": "Caballeros",
         "imagen": "./Img/Caballeros.jpg",
         },
-        {
+        {"id": 10,
         "nombre": "Ninove",
         "imagen": "./Img/Ninove.jpg",
         },
-        {
+        {"id": 11,
         "nombre": "Consejero",
         "imagen": "./Img/Consejero.jpg",
         },
