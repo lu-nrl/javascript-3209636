@@ -1,4 +1,5 @@
-let comic = {
+
+export let comic = {
     "nombreComic": "Cenizas De Honor",
     "sinopsis": "Un caballero siguiendo su destino",
     "year": 2025,
@@ -8,6 +9,7 @@ let comic = {
         { "id": 1,
           "nombre": "Sr.León",
           "imagen": "./Img/Sr.León.jpg",
+          "descripcion": "El Sr. León es un valiente caballero que busca restaurar el honor de su familia después de una traición que lo dejó sin hogar y sin propósito. A lo largo de su viaje, enfrenta numerosos desafíos y enemigos, pero su determinación y sentido del deber lo impulsan a seguir adelante. Con la ayuda de aliados inesperados, el Sr. León lucha por recuperar su legado y proteger a los inocentes en un mundo lleno de peligros."
         },
         {
         "id": 2,
@@ -52,29 +54,7 @@ let comic = {
         },
     ],
 
-    "capitulos": [
-        {
-          "nombre1": "CAP 1: PRIMERAS CIVILIZACIONES Y LA INVENCION DE LA ESCRITURA",
-          "imagen1": "./Img/primeras\ civilizaciones.jpg",
-        },
-        {
-          "nombre2": "CAP 2: LA ANTIGUA GRECIA Y ROMA",
-          "imagen2": "./Img/antigua\ grecia\ y\ roma.jpg",
-        },
-        {
-          "nombre2": "CAP 3: LA EDAD MEDIA Y LA GESTION DEL CONOCIMIENTO Y LA INNOVACION",
-          "imagen2": "./Img/Edad\ media\ gestion\ de\ conocimieto.jpg",
-        },
-        {
-          "nombre2": "CAP 4: REVOLUCION INDUSTRIAL",
-          "imagen2": "./Img/revolucion\ industrial.jpg",
-        },
-        {
-          "nombre2": "CAP 5: ERA DIGITAL",
-          "imagen2": "./Img/era\ digital.jpg",
-        },
-    ],
-
+    
 
 
     "genero": ["Historia", "Fantasia", "Ciencia Ficción", "Acción"],

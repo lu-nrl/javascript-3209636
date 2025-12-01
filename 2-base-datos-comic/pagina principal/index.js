@@ -1,3 +1,5 @@
+import { comic } from './bd.js';
+
 const listaEscenas = document.querySelector (".escenas-lista")
 const personajesContainer= document.querySelector (".personajes-lista")
 const infoComic= document.querySelector (".personajes-lista")
