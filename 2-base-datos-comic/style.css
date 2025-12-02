@@ -121,22 +121,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* VIDEO */
-.video {
-    background-color: #1b1b1b;
-    padding: 25px;
-    border-radius: 12px;
-}
-
-.btn-video {
-    padding: 10px 20px;
-    background-color: #4a76ff;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    margin-top: 15px;
-    cursor: pointer;
-}
 
 /* NARRATIVA */
 .narrativa {
@@ -154,6 +138,12 @@ body {
 }
 
 /* PERSONAJES */
+
+.personajesId{
+text-decoration: none;
+color: white;
+}
+
 .personajes {
     padding: 20px;
     width: 100%;
@@ -193,6 +183,10 @@ body {
     font-size: 16px;
 }
 /* ESCENAS */
+.escenasId{
+text-decoration: none;
+color: white;
+}
 .escenas {
     padding: 20px;
     width: 100%;
@@ -354,20 +348,6 @@ body {
         margin-top: 40px;
     }
 
-    .video {
-        background-image: url(Img/trailer.png);
-        background-size: cover;
-        background-position: center;
-        padding: 40px;
-        border-radius: 12px;
-    }
-
-   
-    .narrativa {
-    background-color: #111;
-    padding: 30px;
-    border-radius: 15px;
-    }
 
     /* PERSONAJES */
     .personajes-lista {

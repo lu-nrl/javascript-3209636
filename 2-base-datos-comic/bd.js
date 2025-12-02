@@ -1,90 +1,76 @@
-let comic = {
+
+export let comic = {
     "nombreComic": "Cenizas De Honor",
     "sinopsis": "Un caballero siguiendo su destino",
     "year": 2025,
     "autores": ["Luna", "Sofia", "Alexis", "Miguel"],
 
     "personajes":[
-        {
+        { "id": 1,
           "nombre": "Sr.León",
-          "imagen": "./Img/Sr.León.jpg",
+          "imagen": "./img/Sr.León.jpg",
+          "descripcion": "El Sr. León es un valiente caballero que busca restaurar el honor de su familia después de una traición que lo dejó sin hogar y sin propósito. A lo largo de su viaje, enfrenta numerosos desafíos y enemigos, pero su determinación y sentido del deber lo impulsan a seguir adelante. Con la ayuda de aliados inesperados, el Sr. León lucha por recuperar su legado y proteger a los inocentes en un mundo lleno de peligros."
         },
         {
+        "id": 2,
         "nombre": "Elvira",
-        "imagen": "./Img/Elvira.jpg",
+        "imagen": "./img/Elvira.jpg",
         },
-        {
+        {"id": 3,
         "nombre": "Rey",
-        "imagen": "./Img/Rey.jpg",
-        },{
+        "imagen": "./img/Rey.jpg",
+        },
+        {"id": 4,
         "nombre": "Reina",
-        "imagen": "./Img/Reina.jpg",
-        },{
+        "imagen": "./img/Reina.jpg",
+        },
+        {"id": 5,
         "nombre": "Sirvienta",
-        "imagen": "./Img/Sirvienta.jpg",
-        },{
+        "imagen": "./img/Sirvienta.jpg",
+        },
+        {"id": 6,
         "nombre": "Brujas del alba",
-        "imagen": "./Img/brujas.jpg",
-        },{
+        "imagen": "./img/brujas.jpg",
+        },
+        {"id": 7,
         "nombre": "Pueblo",
-        "imagen": "./Img/Gente.jpg",
-        },{
+        "imagen": "./img/Gente.jpg",
+        },
+        {"id": 8,
         "nombre": "Cristobal Colón",
-        "imagen": "./Img/Cristobal.jpg",
+        "imagen": "./img/Cristobal.jpg",
         },
-        {
+        {"id": 9,
         "nombre": "Caballeros",
-        "imagen": "./Img/Caballeros.jpg",
+        "imagen": "./img/Caballeros.jpg",
         },
-        {
+        {"id": 10,
         "nombre": "Ninove",
-        "imagen": "./Img/Ninove.jpg",
+        "imagen": "./img/Ninove.jpg",
         },
-        {
+        {"id": 11,
         "nombre": "Consejero",
-        "imagen": "./Img/Consejero.jpg",
+        "imagen": "./img/Consejero.jpg",
         },
     ],
 
-    "capitulos": [
-        {
-          "nombre1": "CAP 1: PRIMERAS CIVILIZACIONES Y LA INVENCION DE LA ESCRITURA",
-          "imagen1": "./Img/primeras\ civilizaciones.jpg",
-        },
-        {
-          "nombre2": "CAP 2: LA ANTIGUA GRECIA Y ROMA",
-          "imagen2": "./Img/antigua\ grecia\ y\ roma.jpg",
-        },
-        {
-          "nombre2": "CAP 3: LA EDAD MEDIA Y LA GESTION DEL CONOCIMIENTO Y LA INNOVACION",
-          "imagen2": "./Img/Edad\ media\ gestion\ de\ conocimieto.jpg",
-        },
-        {
-          "nombre2": "CAP 4: REVOLUCION INDUSTRIAL",
-          "imagen2": "./Img/revolucion\ industrial.jpg",
-        },
-        {
-          "nombre2": "CAP 5: ERA DIGITAL",
-          "imagen2": "./Img/era\ digital.jpg",
-        },
-    ],
-
+    
 
 
     "genero": ["Historia", "Fantasia", "Ciencia Ficción", "Acción"],
-    "portada": "./Img/Imagen1.png",
+    "portada": "./img/Imagen1.png",
     "escenas": [
         {
             "id": 1,
             "nombre": "ghdfhawgeheage",
             "personajes": ["elvi", "reina"],
-            "image": "./Img/batalla bosque.jpg",
+            "image": "./img/batalla bosque.jpg",
         },
         {
              "id": 2,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./Img/castillo-rey.jpg",
+            "image": "./img/castillo-rey.jpg",
         },
         {
             "id": 3,
@@ -168,7 +154,7 @@ let comic = {
             "id": 16,
             "nombre": "",
             "personajes": ["Personaje1", "Personaje2"],
-            "image": "./images/.png",
+            "image": "./images/.png",   
         },
         {
             "id": 17,
