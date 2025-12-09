@@ -7,7 +7,7 @@ contenedor.innerHTML = `
  <p class="titulo-comic2">Escenas</p>
         <p class="texto-comic2">${escenas.nombre}</p>
         <div class="comic-contenido2">
-            <img class="comic-imagen2" src="${escenas.video}">
+             <video class="video2" src="${escenas.video}" controls > </video>
         </div>
 `;
 const btnVolver = document.querySelector(".btn-volver");

@@ -16,7 +16,7 @@ body {
 .btn-volver {
     margin: 20px 0;
     padding: 10px 20px;
-    background-color: #4a76ff;
+    background-color: rgb(233, 138, 83);
     border: none;
     border-radius: 20px;
     color: white;
@@ -24,6 +24,10 @@ body {
     font-size: 16px;
     align-self: flex-start; 
     margin-left: 20px;
+     box-shadow: 0 5px 15px rgba(233, 138, 83, 0.658);
+}
+.video2{
+    width: 150vh;
 }
 .principal2 {
     text-align: center;
@@ -44,15 +48,6 @@ body {
     margin-bottom: 30px;
 }
 
-.btn-princi2 {
-    padding: 12px 30px;
-    background-color: #4a76ff;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 .comic2 {
     width: 100%;

@@ -36,7 +36,7 @@ comic.escenas.forEach(escena => {
     miCard.innerHTML = `
    <a class= "escenasId" href="./pagina_escenas/escenas.html?id=${escena.id}">
     <div class="escena-item">
-                <img class="escena-imagen" src="${escena.image}">
+                <img class="escena-imagen" src="${escena.imagen}">
                 <p class="escena-nombre">${escena.nombre}</p>
             </div>
             </a>`
