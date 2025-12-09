@@ -10,3 +10,8 @@ contenedor.innerHTML = `
             <img class="comic-imagen2" src="${escenas.video}">
         </div>
 `;
+const btnVolver = document.querySelector(".btn-volver");
+
+btnVolver.addEventListener('click', () => {
+    window.history.back();
+});

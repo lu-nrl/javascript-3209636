@@ -11,3 +11,10 @@ contenedor.innerHTML = `
         </div>
         <p class="info-comic3">${personaje.descripcion}</p>
 `;
+const btnVolver = document.querySelector(".btn-volver");
+
+btnVolver.addEventListener('click', () => {
+    window.history.back(); // Regresa a la página anterior (index.html)
+});
+
+

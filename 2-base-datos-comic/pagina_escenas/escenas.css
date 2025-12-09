@@ -12,6 +12,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.btn-volver {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #4a76ff;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start; 
+    margin-left: 20px;
+}
 .principal2 {
     text-align: center;
     width: 100%;

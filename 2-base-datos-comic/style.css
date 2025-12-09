@@ -22,14 +22,63 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    animation: carruselFondo 20s infinite alternate; 
+    animation: carruselFondo 20s infinite alternate;
+}
+
+/* Animaciones */
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes carruselFondo {
-    0% { background-image: url(./Img/Imagen1.png); }
-    33% { background-image: url(./Img/Campo\ De\ Batalla\ Fondo.jpg); } 
-    66% { background-image: url(./Img/Imagen1.png); }
-    100% { background-image: url(./Img/Campo\ De\ Batalla\ Fondo.jpg); }
+    0% {
+        background-image: url(./Img/Imagen1.png);
+    }
+
+    33% {
+        background-image: url(./Img/Campo\ De\ Batalla\ Fondo.jpg);
+    }
+
+    66% {
+        background-image: url(./Img/Imagen1.png);
+    }
+
+    100% {
+        background-image: url(./Img/Campo\ De\ Batalla\ Fondo.jpg);
+    }
+}
+
+.personajes-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(236, 126, 75, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.capitulo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(236, 126, 75, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.escena-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(236, 126, 75, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-princi:hover {
+    background-color: #ffffff;
+    /* Efecto hover más suave */
+    color: #000000;
 }
 
 .carrusel-contenedor {
@@ -39,7 +88,7 @@ body {
     align-items: center;
     height: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -47,6 +96,7 @@ body {
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(233, 138, 83);
 }
 
 .princi-descripcion {
@@ -56,23 +106,29 @@ body {
 
 .btn-princi {
     padding: 12px 30px;
-    background-color: #4a76ff;
+    background-color: rgb(233, 138, 83);
     border: none;
     border-radius: 25px;
     color: white;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: 0 5px 15px rgba(233, 138, 83, 0.658);
 }
 
 /* MARCA */
 .marca {
     width: 100%;
     padding: 20px;
+    animation: entrada 1s ease-out forwards;
 }
 
 .titulo-marca {
     font-size: 36px;
     font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid rgb(233, 138, 83);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .texto-marca {
@@ -94,35 +150,22 @@ body {
     border: 1px solid #333;
 }
 
-.btn-anterior {
-    margin: 20px 10px;
-    padding: 12px 25px;
-    color: white;
-    background-color: #4a76ff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
-.btn-siguiente {
-    margin: 20px 10px;
-    padding: 12px 25px;
-    color: white;
-    background-color: #4a76ff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
 /* COMIC */
 .comic {
     width: 100%;
     padding: 60px 20px;
+    animation: entrada 1s ease-out forwards;
 }
 
 .titulo-comic {
     font-size: 36px;
     font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid rgb(233, 138, 83);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .texto-comic {
@@ -159,19 +202,24 @@ body {
 
 /* PERSONAJES */
 
-.personajesId{
-text-decoration: none;
-color: white;
+.personajesId {
+    text-decoration: none;
+    color: white;
 }
 
 .personajes {
     padding: 20px;
     width: 100%;
+    animation: entrada 1s ease-out forwards;
 }
 
 .titulo-personajes {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid rgb(233, 138, 83);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .personajes-lista {
@@ -189,6 +237,7 @@ color: white;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .personajes-imagen {
@@ -202,19 +251,26 @@ color: white;
     padding: 10px;
     font-size: 16px;
 }
+
 /* ESCENAS */
-.escenasId{
-text-decoration: none;
-color: white;
+.escenasId {
+    text-decoration: none;
+    color: white;
 }
+
 .escenas {
     padding: 20px;
     width: 100%;
+    animation: entrada 1s ease-out forwards;
 }
 
 .titulo-escenas {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid rgb(233, 138, 83);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .escenas-lista {
@@ -229,9 +285,11 @@ color: white;
     width: 180px;
     height: 220px;
     background-color: #1b1b1b;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     text-align: center;
+    border: 1px solid rgb(233, 138, 83);
+    transition: all 0.3s ease-in-out;
 }
 
 .escena-imagen {
@@ -258,6 +316,7 @@ color: white;
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -300,72 +359,71 @@ color: white;
 
     .personaje-item {
         width: 150px;
-        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #4a76ff;
     }
 
 }
 
 /* tablet */
-@media (min-width: 768px) {
-   
-    }
+@media (min-width: 768px) {}
 
-    /* PRINCIPAL */
-    .principal {
-        padding: 120px 20px;
-    }
+/* PRINCIPAL */
+.principal {
+    padding: 120px 20px;
+}
 
-    .titulo-principal {
-        font-size: 64px;
-    }
+.titulo-principal {
+    font-size: 64px;
+}
 
-    .princi-descripcion {
-        font-size: 22px;
-        max-width: 55%;
-    }
+.princi-descripcion {
+    font-size: 22px;
+    max-width: 55%;
+}
 
-    /* MARCA */
-    .marca-lista {
-        justify-content: center;
-        gap: 50px;
-    }
+/* MARCA */
+.marca-lista {
+    justify-content: center;
+    gap: 50px;
+}
 
-    .marca-item {
-        width: 220px;
-        padding: 30px;
-    }
+.marca-item {
+    width: 220px;
+    padding: 30px;
+}
 
-    /* COMIC */
-    .comic-contenido {
-        gap: 40px;
-    }
+/* COMIC */
+.comic-contenido {
+    gap: 40px;
+}
 
-    .comic-imagen {
-        width: 400px;
-    }
+.comic-imagen {
+    width: 400px;
+}
 
-    .comic-subtitulo {
-        font-size: 22px;
-        margin-top: 40px;
-    }
+.comic-subtitulo {
+    font-size: 22px;
+    margin-top: 40px;
+}
 
 
-    /* PERSONAJES */
-    .personajes-lista {
-        justify-content: center;
-        gap: 30px;
-    }
+/* PERSONAJES */
+.personajes-lista {
+    justify-content: center;
+    gap: 30px;
+}
 
-    .personaje-item {
-        width: 180px;
-        padding: 25px;
-    }
+.personaje-item {
+    width: 180px;
+    padding: 25px;
+}
 
-    /* FOOTER */
-    .footer {
-        padding: 60px 20px;
-        font-size: 18px;
-    }
+/* FOOTER */
+.footer {
+    padding: 60px 20px;
+    font-size: 18px;
+}
 
 
 @media (min-width: 600px) {
@@ -403,21 +461,11 @@ color: white;
         width: 150px;
         padding: 20px;
     }
-
-    /* CAPITULOS */
-    .capitulos-lista {
-        justify-content: center;
-    }
-
-    .capitulo-item {
-        width: 180px;
-        padding: 22px;
-    }
 }
 
 /*mediano */
 @media (min-width: 900px) {
-    
+
     /* PRINCIPAL */
     .principal {
         padding: 120px 20px;
