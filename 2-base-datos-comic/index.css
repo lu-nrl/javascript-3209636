@@ -18,7 +18,7 @@ body {
     text-align: center;
     width: 100%;
     height: 90vh;
-    background-image: url(./Img/Imagen1.png);
+    background-image: url(./img/Imagen1.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -41,19 +41,19 @@ body {
 
 @keyframes carruselFondo {
     0% {
-        background-image: url(./Img/Imagen1.png);
+        background-image: url(./img/Imagen1.png);
     }
 
     33% {
-        background-image: url(./Img/España.jpeg);
+        background-image: url(./img/España.jpeg);
     }
 
     66% {
-        background-image: url(./Img/Guerra.jpeg);
+        background-image: url(./img/Guerra.jpeg);
     }
 
     100% {
-        background-image: url(./Img/Conversion.jpeg);
+        background-image: url(./img/Conversion.jpeg);
     }
 }
 
