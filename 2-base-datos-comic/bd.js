@@ -43,7 +43,7 @@ export let comic = {
         "descripcion": "El Pueblo es una comunidad de personas comunes que viven bajo el gobierno del Rey y la Reina. A lo largo de la historia, representan la voz del pueblo y sus luchas diarias. Aunque a menudo son víctimas de las decisiones de los poderosos, el Pueblo demuestra una resiliencia y un espíritu colectivo que los impulsa a luchar por un futuro mejor."
         },
         {"id": 8,
-        "nombre": "CRISROBAL COLON",
+        "nombre": "CRISTOBAL COLON",
         "imagen": "./img/Cristobal.jpg",
         "descripcion": "Cristóbal Colón es un navegante y explorador audaz que sueña con descubrir nuevas tierras y rutas comerciales. A lo largo de la historia, su determinación y visión lo llevan a enfrentar numerosos desafíos en alta mar. Con un espíritu indomable y una fe inquebrantable en su misión, Cristóbal Colón se convierte en una figura histórica que cambia el curso del mundo."
         },
