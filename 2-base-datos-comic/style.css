@@ -518,17 +518,6 @@ body {
         padding: 25px;
     }
 
-    /* CAPITULOS */
-    .capitulos-lista {
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .capitulo-item {
-        width: 220px;
-        padding: 30px;
-    }
-
     /* FOOTER */
     .footer {
         padding: 60px 20px;
@@ -565,13 +554,3 @@ body {
         padding: 28px;
     }
 
-    /* CAPITULOS */
-    .capitulos-lista {
-        gap: 40px;
-    }
-
-    .capitulo-item {
-        width: 250px;
-        padding: 35px;
-    }
-}
