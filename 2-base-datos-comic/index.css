@@ -90,11 +90,13 @@ body {
     margin-bottom: 10px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgb(233, 138, 83);
+     animation: entrada 1s ease-out forwards;
 }
 
 .princi-descripcion {
     font-size: 18px;
     margin-bottom: 30px;
+     animation: entrada 1s ease-out forwards;
 }
 
 .btn-princi {
@@ -106,6 +108,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 5px 15px rgba(233, 138, 83, 0.658);
+     animation: entrada 1s ease-out forwards;
 }
 
 /* MARCA */
@@ -470,4 +473,5 @@ body {
         font-size: 24px;
         max-width: 50%;
     }
+
 }
